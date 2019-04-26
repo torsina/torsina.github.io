@@ -6,7 +6,7 @@
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <!-- bootstrap -->
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
                 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -79,8 +79,30 @@
                     <p class="card-text">
                         I wanted to make this website understandable by anyone who would want to look at it. That's why all my variable names, all my comments and even this page right now is in english.
                         <br><br>
-                        Writing code that is only readable by roughly 300 millions people (as of 2019) out of 7 billion is stupid and should be avoided to prevent the pain of some non french-speaking people trying to maintain that code.</p>
+                        Writing code that is only readable by roughly 300 millions people (as of 2019) out of 7 billion is meaningless and should be avoided to prevent the pain of all the non-french speaking people trying to maintain that code.
+                    </p>
                     <a href="https://en.wikipedia.org/wiki/French_language" class="card-link">French-speaking population source</a>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-body">
+                    <h4 class="card-title">What are all those black lines on the screen that appear out of nowhere? Your code is flawed!</h4>
+                    <p class="card-text">
+                        This is called Tile Bleeding, and is caused by how Phaser 3 uses the textures of the tileset. It can't be easily fixed. Since all of this was just a proof of concept I thought it was just fine as is.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/French_language" class="card-link">French-speaking population source</a>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-body">
+                    <h4 class="card-title">Why doesn't the game work in my browser?!</h4>
+                    <p class="card-text">
+                        My code uses js ECMA-script 6 class syntax, arrow functions, and the variable declarations const and let.
+                        <br>
+                        All of tests during the development of this project was based on Chrome 73.
+                        <br><br>
+                        A way to fix this compatilibity issue would be to use webpack or browserify to make this project legacy-compatible via a bundle. Tho if I did that I would have greatly exceeded the limit of 2MB for the project just on the js script alone
+                    </p>
                 </div>
             </div>
         </main>
