@@ -18,10 +18,6 @@ export default class Player {
             frameRate: 12,
             repeat: -1
         });
-        anims.create({
-            key: "player-dead",
-            frames: anims.generateFrameNumbers("player")
-        })
 
         // Create the physics-based sprite that we will move around and animate
         this.sprite = scene.physics.add
@@ -122,6 +118,7 @@ export default class Player {
     damage() {
         if(!this.invulnerable) {
             this.health--;
+            this.applyHealthState();
             if(this.health <= 0) {
                 this.freeze();
                 const sceneManager = new Phaser.Scenes.ScenePlugin(this.scene);

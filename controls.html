@@ -2,9 +2,74 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Controls</title>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <!-- bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/animate.js"></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; shrink-to-fit=no">
     </head>
-    <body>
-        
+    <body class="background">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light border nav-outer-border">
+                <a class="navbar-brand mr-auto own-navbar-text" href="#">Mario bross in the browser concept</a>
+                <!-- button for collapsed navbar -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- collapsed navbar -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <!-- Home -->
+                    <div class="nav-item">
+                        <img src="svg/home.svg" alt="Home" style="width: 25px;">
+                        <a href="index.html" class="navbar-text">Home</a>
+                    </div>
+                    <!-- Controls -->
+                    <div class="nav-item">
+                        <img src="svg/wrench.svg" alt="Controls" style="width: 25px;">
+                        <a href="#" class="navbar-text">Controls</a>
+                    </div>
+                    <div class="nav-item">
+                        <img src="svg/support.svg" alt="Q & A" style="width: 25px;">
+                        <a href="qa.html" class="navbar-text">Q & A</a>
+                    </div>
+
+                    <div class="dropdown-divider custom-divider"></div>
+                    <div class="nav-item">
+                        <a href="game.html" class="navbar-text">Play the game!</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="presentation">
+                The controls of the game
+            </div>
+            <div class="divider"></div>
+            <div class="card box">
+                <div class="card-body">
+                    <p class="card-text">
+                        SPACE or Z or UP ARROW KEY: jump
+                        <br>
+                        Q or LEFT ARROW KEY: left
+                        <br>
+                        D or RIGHT ARROW KEY: right
+                    </p>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
